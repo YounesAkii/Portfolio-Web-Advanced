@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       let crypto = document.getElementById("crypto").value;
       let amount = document.getElementById("amount").value;
 
+      // Formulier validatie
+      if (!currency || !crypto || !amount) {
+        alert("Vul alstublieft alle velden in.");
+        return;
+      }
+
       localStorage.setItem('crypto', crypto);
       localStorage.setItem('amount', amount);
       localStorage.setItem('currency', currency);
