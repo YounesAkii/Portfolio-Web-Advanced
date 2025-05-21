@@ -3,20 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>On-Demand Crypto Prices</title>
   </head>
+
   <body>
     <div class="swap-container" id="container">
       <div class="input-group">
+
         <input id="crypto" type="text" placeholder="Enter a crypto">
+
         <div class="icon-container">
           <img id="crypto-image" class="currency-icon" onerror="this.style.display='none'"/>
         </div>
+
       </div>
 
-      <div class="input-group">
-        <input type="number" id="amount" value="1">
-      </div>
+      <div class="input-group"><input type="number" id="amount" value="1"></div>
 
       <div class="input-group">
         <select id="currency">
@@ -26,9 +29,11 @@
           <option value="JPY">Japanese Yen (JPY)</option>
           <option value="CNY">Chinese Yuan (CNY)</option>
         </select>
+
         <div class="icon-container">
           <img id="currency-image" class="currency-icon" onerror="this.style.display='none'"/>
         </div>
+
       </div>
 
       <div class="arrow">↓</div>
@@ -45,11 +50,6 @@
     </div>
 
     <script type="module" src="/src/main.js"></script>
-    <script>
-      (function() {
-        document.title = "Crypto Exchange Rate";
-      })();
-    </script>
   </body>
 </html>
 

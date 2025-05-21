@@ -67,8 +67,6 @@ select:focus option {
   font-size: 18px;
   width: 100%;
   cursor: pointer;
-  transition: background 0.3s;
-
 }
 
 .swap-container button:hover {
@@ -131,11 +129,9 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #2c2c2c inset ;
-  
-  -webkit-text-fill-color:white;
-  color: white;
-  
+  -webkit-box-shadow: 0 0 0 30px var(--control-bg) inset;
+  -webkit-text-fill-color: var(--text-color);
+  color: var(--text-color);
 }
 
 .rate-display,
@@ -161,11 +157,11 @@ input:-webkit-autofill:active {
 .amount-display {
   font-size: 24px;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--bg-color)
 }
 
 .placeholder-line {
-  background-color: #2c2c2c;
+  background-color: var(--control-bg);
   height: 50px;
   border-radius: 8px;
   margin: 10px 0;
@@ -185,4 +181,229 @@ input:-webkit-autofill:active {
   height: 24px;
   border-radius: 50%;
   padding: 4px;
+}
+
+.swap-container {
+  background: var(--container-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.swap-container .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--control-bg);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.swap-container .input-group input {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 18px;
+  width: 60%;
+  text-align: left;
+}
+
+.swap-container .input-group select {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5200px; /* adjust as needed */
+}
+
+.crypto-table-container {
+  margin: 20px;
+  overflow-x: auto;
+  background: var(--container-bg);  /* Gebruik de theme variabele */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Ruimte onder de converter widget */
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  color: var(--text-color);  /* Use theme variable instead of hardcoded white */
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-table th {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.positive {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.negative {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: transform 0.2s ease;
+}
+
+.fav-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Toevoegen van kolombreedtes voor betere layout */
+.crypto-table th:nth-child(1),
+.crypto-table td:nth-child(1) {
+  width: 20%;
+}
+
+.crypto-table th:nth-child(2),
+.crypto-table td:nth-child(2) {
+  width: 10%;
+}
+
+.crypto-table th:nth-child(3),
+.crypto-table td:nth-child(3) {
+  width: 15%;
+}
+
+.crypto-table th:nth-child(4),
+.crypto-table td:nth-child(4) {
+  width: 20%;
+}
+
+.crypto-table th:nth-child(5),
+.crypto-table td:nth-child(5) {
+  width: 20%;
+}
+
+.crypto-table th:nth-child(6),
+.crypto-table td:nth-child(6) {
+  width: 10%;
+}
+
+.crypto-table th:nth-child(7),
+.crypto-table td:nth-child(7) {
+  width: 5%;
+  text-align: center;
+}
+
+
+.controls-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* Update select options to use theme variables */
+.controls-container select option {
+  background-color: var(--control-bg);
+  color: var(--text-color);
+}
+
+.search-input,
+.price-filter,
+.sort-select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--control-bg);  /* Use theme variable instead of hardcoded black */
+  color: var(--text-color);      /* Use theme variable for text color */
+  font-size: 14px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.price-filter,
+.sort-select {
+  min-width: 150px;
+}
+
+/* Thema systeem */
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #000000;  /* Darker text for better contrast */
+  --table-bg: #ffffff;    /* Pure white background */
+  --hover-bg: #f0f0f0;    /* Lighter hover state */
+  --container-bg: rgba(255, 255, 255, 0.95);  /* More opaque white */
+  --control-bg: rgba(240, 240, 240, 0.9);     /* Lighter control background */
+  --border-color: rgba(0, 0, 0, 0.2);         /* Darker border for better visibility */
+  --button-bg: #333333;   /* Darker button background */
+  --header-bg: #e0e0e0;   /* Light gray for table headers */
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --table-bg: #2c2c2c;
+  --hover-bg: #3c3c3c;
+  --container-bg: rgba(28, 28, 28, 0.95);
+  --control-bg: rgba(44, 44, 44, 0.8);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --button-bg: transparent;
+}
+
+/* Theme toggle, language selector and location pin */
+.theme-toggle,
+.language-select,
+.geo-button {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--control-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover,
+.language-select:hover,
+.geo-button:hover {
+  background: var(--hover-bg);
+}
+.swap-container .input-group input::placeholder {
+  color: var(--text-color); /* Use theme variable for text color */
+  opacity: 0.5;
 }
