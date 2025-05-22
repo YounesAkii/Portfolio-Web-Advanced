@@ -101,7 +101,7 @@ function fetchData(crypto, currency) {
     try {
       // Using a CORS proxy to bypass the CORS restriction
       const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-      // Switch to production API endpoint instead of sandbox
+      // Switch to production API endpoint
       const apiUrl = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=${crypto.toUpperCase()}&convert=${currency}`;
       
       console.log('Fetching from:', apiUrl);
