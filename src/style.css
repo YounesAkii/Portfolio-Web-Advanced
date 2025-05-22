@@ -407,3 +407,58 @@ input:-webkit-autofill:active {
   color: var(--text-color); /* Use theme variable for text color */
   opacity: 0.5;
 }
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .swap-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .crypto-table-container {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .swap-container .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .swap-container .input-group input,
+  .swap-container .input-group select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .swap-container button {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive design for very small screens */
+@media (max-width: 480px) {
+  .swap-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .crypto-table-container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .swap-container .arrow {
+    font-size: 20px;
+  }
+
+  .rate-display,
+  .time-display,
+  .amount-display {
+    font-size: 18px;
+  }
+}
