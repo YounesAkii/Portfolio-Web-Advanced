@@ -6,6 +6,7 @@ Dit project is een webapplicatie die real-time cryptocurrency prijzen toont. Geb
 De tabel toont de huidige top-100 crypto-munten. De zoekbalk kan de gebruiker gebruiken om te zoeken naar een crypto die in de top 100 zit. De gebruiker kan ook aan de prijs van de meeste crypto-munten komen, ook buiten de top 100, door de swap-functie.
 
 ## Functionaliteiten
+- Tabel met huidige top-100 cryptocurrencies
 - Real-time cryptocurrency prijzen
 - Favorieten opslaan
 - Thema en taalvoorkeuren instellen
