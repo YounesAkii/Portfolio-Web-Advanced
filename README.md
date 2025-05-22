@@ -115,7 +115,7 @@ Top 3 toegevoegd aan favorieten, blijft behouden ookal wordt er gerefresht
 
 
 ## Gebruikte Bronnen
-- TRAE IDE , there is no AI chatlog that's shareable as with chatgpt. I did use it frequently.
+- TRAE IDE , there is no AI chatlog that's shareable as with chatgpt.
 - https://chatgpt.com/share/682e404d-6f78-800e-976d-2167e03e08cc
 - https://chatgpt.com/share/682e407e-4bbc-800e-af78-9a5d69a21f8e 
 
