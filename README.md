@@ -3,7 +3,7 @@
 ## Projectbeschrijving
 Dit project is een webapplicatie die real-time cryptocurrency prijzen toont. Gebruikers kunnen zoeken naar verschillende cryptocurrencies. Ze kunnen de prijs van een crypto-currency opvragen in verschillende munteneenheden (Dollar, Yen, GBP etc.). Ze kunnen hun favoriete crypto-munten opslaan door ze een hartje te geven. 
 
-De tabel toont de huidige top-100 crypto-munten. De zoekbalk kan de gebruiker gebruiken om te zoeken naar een crypto die in de top 100 zit. De gebruiker kan ook aan de prijs van de meeste crypto-munten komen, ook buiten de top 100, door de swap-functie.
+De tabel toont de huidige top-100 crypto-munten. De zoekbalk kan de gebruiker gebruiken om te zoeken naar een crypto die in de top 100 zit. De gebruiker kan ook aan de prijs van de meeste crypto-munten komen, ook buiten de top 100, door de swap-functie, waarin hij wel de ticker en niet de volledige naam van de crypto moet invullen.
 
 ## Functionaliteiten
 - Tabel met huidige top-100 cryptocurrencies
