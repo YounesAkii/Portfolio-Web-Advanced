@@ -8,6 +8,9 @@ De tabel toont de huidige top-100 crypto-munten. De zoekbalk kan de gebruiker ge
 ## Functionaliteiten
 - Tabel met huidige top-100 cryptocurrencies
 - Real-time cryptocurrency prijzen
+- 24u volume
+- Market Cap
+- 24u prijsverandering in percent
 - Favorieten opslaan
 - Thema en taalvoorkeuren instellen
 
