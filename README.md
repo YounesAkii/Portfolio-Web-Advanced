@@ -125,5 +125,5 @@ CORS is een browserbeveiliging die voorkomt dat een website zomaar data kan opvr
 
 Voor een echte productieversie zou ik:
     De API-aanroepen via een eigen back-end server laten lopen
-    Of een API gebruiken die native CORS ondersteunt voor mijn domein
+    of een API gebruiken die native CORS ondersteunt voor mijn domein.
     Deze proxy-oplossing is enkel tijdelijk bedoeld voor lokale ontwikkeling en demo-doeleinden.
