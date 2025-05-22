@@ -78,6 +78,9 @@ Een correcte folderstructuur wordt aangehouden (gescheiden html, css en js files
 2. Navigeer naar de projectmap: `cd Portfolio-Web-Advanced`
 3. Installeer de afhankelijkheden: `npm install`
 4. Start de applicatie: `npm run dev`
+5. Belangrijk: Om CORS-beperkingen te omzeilen tijdens de ontwikkeling, gebruik ik CORS Anywhere.
+    Bezoek deze link: https://cors-anywhere.herokuapp.com/corsdemo en klik op de knop "Request temporary access to the demo server".
+    Dit geeft je tijdelijk toegang om externe API’s te kunnen aanspreken in de browser.
 
 ## Screenshots
 Homepage in dark mode
@@ -114,3 +117,12 @@ Top 3 toegevoegd aan favorieten, blijft behouden ookal wordt er gerefresht
 - TRAE IDE , there is no AI chatlog that's shareable as with chatgpt. I did use it frequently.
 - https://chatgpt.com/share/682e404d-6f78-800e-976d-2167e03e08cc
 - https://chatgpt.com/share/682e407e-4bbc-800e-af78-9a5d69a21f8e 
+
+## Opmerking over CORS
+Dit project gebruikt de gratis proxydienst CORS Anywhere om CORS (Cross-Origin Resource Sharing) beperkingen te omzeilen tijdens de ontwikkeling.
+CORS is een browserbeveiliging die voorkomt dat een website zomaar data kan opvragen van een andere domein. In een productieomgeving zou dit niet veilig of schaalbaar zijn.
+
+Voor een echte productieversie zou ik:
+    De API-aanroepen via een eigen back-end server laten lopen
+    Of een API gebruiken die native CORS ondersteunt voor mijn domein
+    Deze proxy-oplossing is enkel tijdelijk bedoeld voor lokale ontwikkeling en demo-doeleinden.
